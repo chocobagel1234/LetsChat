@@ -1,0 +1,63 @@
+@font-face {
+	font-family: Aurelia Michelle;
+	src: url("aureliamichelledemo-mvd2p.otf")
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+}
+
+label {
+	text-align:left !important;
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+.login-div {
+	background-color: #ffffffeb;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.input-box {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.school-header {
+	font-family: 'Aurelia Michelle';
+	font-weight: bold;
+}
+
+.login-header {
+	font-family:'Open Sans', sans-serif;
+	font-weight: 700;
+	background: linear-gradient(to right, #9e6c76, #b5838d, #eb9077);;
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-lg {
+	background-color: #b5838d !important;
+	border: none;
+}
+
+.btn-lg:hover {
+	cursor: pointer;
+	background-color: #9e6c76 !important;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(48, 48, 48);
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
