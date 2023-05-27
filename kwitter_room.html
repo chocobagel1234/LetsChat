@@ -43,7 +43,10 @@
 <script src="kwitter_room.js"></script>
 
 </head>
-<body style="background-color: rgb(255, 246, 252); object-fit: cover;">
+<body style="background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(184,171,179,1) 0%, rgba(249,231,243,1) 100%);
+
+object-fit: cover; background-repeat: no-repeat;">
 	<!--Bootstrap Navbar (copied from Bootstrap website)-->
 	<nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
 		<div class="container-fluid">
@@ -54,8 +57,18 @@
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
+			<br>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			  <ul class="navbar-nav">
+				
+				<br><br><br> <r
+				<div class="input-group mb-3">
+				
+					<input id="search" type="text" class="form-control input-box" placeholder="Search...">
+				
+					<button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="bi bi-search"></i></span></button>
+				</div>
+<br>
 				<li class="nav-item">
 				  <a class="nav-link active" aria-current="page" href="#">Home</a>
 				</li>
@@ -84,22 +97,37 @@
 
 <br><br>
 	<center>
-		<div class="col-lg-6 col-md-8 col-sm-7 col-xs-11 room-div">
-		<h1 class="login-header">	
+		<div class="col-lg-6 col-md-8 col-sm-7 col-xs-11 welcome-div">
+		<h1 class="welcome-header">	
 			LetsChat
 		</h1>
-		<h5 id="user_welcome">Welcome!</h5>
+		<h5 id="user_welcome" class="lead"><b>Welcome!</b></h5>
+		
 		<div class="form-group input_div_room_page">
+            
+			<div class="form-floating mb-0 mt-0">
+			<input id="room_name" type="text" class="form-control" placeholder="Room name:"></input>
 			<label>Add Room</label>
-            <input id="room_name" type="text" class="form-control" placeholder="Room name:"></input>
+			</div>
 			<br>
 		</div>
-		<button class="btn btn-success kwitter-btn"><i class="bi bi-plus-lg"></i> Add Room</button>
+		<button onclick="addRoom()" class="btn btn-success kwitter-btn"><i class="bi bi-plus-lg"></i> Add Room</button>
 		<br><br>
+	</div>
+<br>
+	
+<div class=" col-lg-10 col-md-9 col-sm-11 col-xs-12 room-div">
+		
+       <h1 class="display-3">Trending Rooms</h1>
+	   <hr>
+
 	</div>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
+<br>
+
+
+<script src="kwitter_room.js" type="module"></script>
 </body>
 </html>
 
